@@ -1,0 +1,22 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+/* Page Style */
+body {
+    margin : 0;
+    padding : 0;
+    background-color : #000000;
+    font-family: 'Jersey 10', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* inherit color from parent */
+}
+
+.space {
+    width: 3.5vw;
+    height: 3.5vw;
+}
