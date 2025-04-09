@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #565656;
-  background-image: url('/Images/background.png');
+  background-image: url('../Images/background.png');
   font-family: 'Jersey 10', sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
   color: white;
