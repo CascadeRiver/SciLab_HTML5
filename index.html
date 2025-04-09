@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SciLab: Eksperimen Sains Online!</title>
-  <link rel="icon" href="Images/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="Styles/generalstyle.css" />
-  <link rel="stylesheet" href="Styles/homestyle.css" />
+
+  <link rel="icon" href="/Images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/Styles/generalstyle.css" />
+  <link rel="stylesheet" href="/Styles/homestyle.css" />
+  <link rel="stylesheet" href="/Styles/navbarstyle.css" />
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="/Images/homelogo.png" alt="logo" class="logo" />
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="navbar-links inactive" id="navbarLinks">
+      <a href="/index.html">Beranda</a>
+      <a href="/Pages/simulsel.html">Simulasi</a>
+      <a href="/Pages/materialsel.html">Materi</a>
+      <a href="/Pages/aboutus.html">Tentang Kami</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
   <section id="header">
     <div class="header-container">
       <div class="header-content">
-        <img src="Images/homelogo.png" alt="SciLab Logo" class="header-logo" />
+        <img src="/Images/homelogo.png" alt="SciLab Logo" class="header-logo"/>
         <div class="header-subtitle">Sains dibuat mudah!</div>
-        <div class="header-question">Mau belajar apa hari ini?</div>
+        <div class="header-question">Mau belajar seperti apa hari ini?</div>
+
         <div class="subject-selector">
-            
-            <span class="subject"> <span class="arrow"> < </span> <a href="Pages/physims.html"> Fisika </a> <span class="arrow"> > </span> </span>
-            <span class="space"></span>
-            <span class="subject"> <span class="arrow"> < </span> <a href="Pages/chemsims.html"> Kimia </a> <span class="arrow"> > </span> </span>
+          <span class="subject">
+            <span class="harrow">&lt;</span>
+            <a href="/Pages/simulsel.html">Simulasi</a>
+            <span class="harrow">&gt;</span>
+          </span>
+
+          <span class="space"></span>
+
+          <span class="subject">
+            <span class="harrow">&lt;</span>
+            <a href="/Pages/materialsel.html">Materi</a>
+            <span class="harrow">&gt;</span>
+          </span>
         </div>
       </div>
     </div>
   </section>
-</body>
 
+  <!-- Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbarLinks = document.getElementById('navbarLinks');
+    navbarLinks.classList.toggle('inactive');
+    hamburger.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
 </html>

@@ -1,0 +1,58 @@
+.simulation-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px;
+  flex-wrap: wrap;
+  background-color: grey;
+}
+
+.card {
+  background-color: black;
+  border: 4px solid white;
+  width: 300px;
+  color: white;
+}
+
+.thumbnail {
+  position: relative;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail-image {
+  max-height: 100%;
+  width: auto;
+}
+
+.play-button {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: 'Pixelify Sans';
+  text-align: center;
+}
+
+.card-description {
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-align: justify;
+}

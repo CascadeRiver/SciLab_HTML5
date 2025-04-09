@@ -1,221 +1,127 @@
-/* Container with full background */
+/* ===================================== */
+/*         Header Container              */
+/* ===================================== */
 .header-container {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../Images/homepage.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* All content centered */
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Logo image */
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ===================================== */
+/*         Header Content Layout         */
+/* ===================================== */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ===================================== */
+/*           Logo Styling                */
+/* ===================================== */
+.header-logo {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: -10%;
+}
+
+
+/* ===================================== */
+/*         Typography - Titles           */
+/* ===================================== */
+.header-subtitle {
+  font-size: 4rem;
+  font-family: "Pixelify Sans", sans-serif;
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.header-question {
+  font-size: 2rem;
+  font-family: "Public Pixel", sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+/* ===================================== */
+/*       Subject Navigation Selector     */
+/* ===================================== */
+.subject-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.subject {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.harrow {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.space {
+  width: 3.5rem;
+}
+
+
+/* ===================================== */
+/*           Mobile Responsive           */
+/* ===================================== */
+@media (max-width: 768px) {
   .header-logo {
-    display: block;
-    max-width: 90%;
-    height: auto;
-    margin-top: 1%;
+    max-width: 90vw;
+    margin-top: -10%;
     margin-bottom: -10%;
   }
-  
-  /* Subtitle */
+
   .header-subtitle {
-    font-size: 4rem;
-    font-family: "Pixelify Sans", sans-serif;
-    color: white;
-    white-space: nowrap;
-    text-align: center;
-    margin-bottom: 5rem;
+    font-size: 6vw;
+    margin-bottom: 3rem;
   }
-  
-  /* Secondary subtitle */
+
   .header-question {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
+    font-size: 4vw;
     margin-bottom: 1rem;
-    font-family: "Public Pixel", sans-serif;
-  }
-  
-  /* Subject choices with arrows */
-  .subject-selector {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: "Pixelify Sans", sans-serif;
-  }
-  
-  .subject {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #FFD700;
-  }
-  
-  .arrow {
-    font-size: 3.5rem;
-    color: white;
-  }
-
-  .space {
-    width: 3.5rem;
-  }
-  
-  /* ====== Mobile Responsive ====== */
-  @media (max-width: 768px) {
-    .header-logo {
-      max-width: 100vw;
-      margin-top: -10%;
-      margin-bottom: -10%;
-    }
-  
-    .header-subtitle {
-      font-size: 6vw; /* scales with screen width */
-      margin-bottom: 3rem;
-    }
-  
-    .header-question {
-      font-size: 4vw;
-      margin-bottom: 1rem;
-      max-width: 90%;
-    }
-  
-    .subject {
-      font-size: 7vw;
-    }
-  
-    .arrow {
-      font-size: 7vw;
-    }
-  
-    .subject-selector {
-    flex-direction: column; /* stack vertically */
-    gap: 0.25rem; /* tighter gap */
-    }
-
-  }
-
-/* Container with full background */
-.header-container {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../Images/homepage.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* All content centered */
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Logo image */
-  .header-logo {
-    display: block;
     max-width: 90%;
-    height: auto;
-    margin-top: 1%;
-    margin-bottom: -10%;
   }
-  
-  /* Subtitle */
-  .header-subtitle {
-    font-size: 4rem;
-    font-family: "Pixelify Sans", sans-serif;
-    color: white;
-    white-space: nowrap;
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-  
-  /* Secondary subtitle */
-  .header-question {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-family: "Public Pixel", sans-serif;
-  }
-  
-  /* Subject choices with arrows */
-  .subject-selector {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: "Pixelify Sans", sans-serif;
-  }
-  
+
   .subject {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #FFD700;
-  }
-  
-  .arrow {
-    font-size: 3.5rem;
-    color: white;
+    font-size: 7vw;
   }
 
-  .space {
-    width: 3.5rem;
+  .harrow {
+    font-size: 7vw;
   }
-  
-  /* ====== Mobile Responsive ====== */
-  @media (max-width: 768px) {
-    .header-logo {
-      max-width: 100vw;
-      margin-top: -10%;
-      margin-bottom: -10%;
-    }
-  
-    .header-subtitle {
-      font-size: 6vw; /* scales with screen width */
-      margin-bottom: 3rem;
-    }
-  
-    .header-question {
-      font-size: 4vw;
-      margin-bottom: 1rem;
-      max-width: 90%;
-    }
-  
-    .subject {
-      font-size: 7vw;
-    }
-  
-    .arrow {
-      font-size: 7vw;
-    }
-  
-    .subject-selector {
-    flex-direction: column; /* stack vertically */
-    gap: 0.25rem; /* tighter gap */
-    }
 
+  .subject-selector {
+    flex-direction: column;
+    gap: 0.25rem;
   }
+}
