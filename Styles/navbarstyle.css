@@ -15,6 +15,7 @@
     width: 100%;
     max-width: 100vw;
     flex-wrap: wrap;
+    font-family: "Press Start 2P";
   }
   
   .logo {
@@ -40,8 +41,13 @@
   
   .navbar-links a {
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 16px #1a1a40, 0 0 24px #3e3e7c;
+    }
   }
   
   /* =============== */
@@ -67,8 +73,12 @@
     }
   
     .navbar-links a {
-      font-size: 1.5rem;
+      font-size: 4vw;
       padding: 0.5rem 0;
+      &:hover {
+        transform: scale(1.05);
+        text-shadow: 0 0 16px #1a1a40, 0 0 24px #3e3e7c;
+      }
     }
   }
   

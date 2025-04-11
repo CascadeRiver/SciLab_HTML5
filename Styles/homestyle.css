@@ -51,14 +51,16 @@
   white-space: nowrap;
   text-align: center;
   margin-bottom: 5rem;
+  text-shadow: 0 0 8px #1a1a40, 0 0 12px #3e3e7c;
 }
 
 .header-question {
-  font-size: 2rem;
-  font-family: "Public Pixel", sans-serif;
+  font-size: 3.5rem;
+  font-family: "Jersey 10", sans-serif;
   color: white;
   text-align: center;
   margin-bottom: 1rem;
+  text-shadow: 0 0 8px #1a1a40, 0 0 12px #3e3e7c;
 }
 
 
@@ -71,18 +73,17 @@
   justify-content: center;
   align-items: center;
 
+  font-size: 2rem;
   gap: 1rem;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 .subject {
-  font-size: 3.5rem;
   font-weight: bold;
   color: #FFD700;
 }
 
 .harrow {
-  font-size: 3.5rem;
   color: white;
 }
 
@@ -97,7 +98,7 @@
 @media (max-width: 768px) {
   .header-logo {
     max-width: 90vw;
-    margin-top: -10%;
+    margin-top: -20%;
     margin-bottom: -10%;
   }
 
@@ -107,21 +108,14 @@
   }
 
   .header-question {
-    font-size: 4vw;
+    font-size: 7vw;
     margin-bottom: 1rem;
     max-width: 90%;
   }
 
-  .subject {
-    font-size: 7vw;
-  }
-
-  .harrow {
-    font-size: 7vw;
-  }
-
   .subject-selector {
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 1rem;
+    font-size: 4vw;
   }
 }

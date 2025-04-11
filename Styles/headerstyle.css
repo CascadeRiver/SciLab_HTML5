@@ -23,6 +23,7 @@ body {
         font-size: 4rem;
         margin-bottom: 1rem;
         font-family: 'Pixelify Sans';
+        text-shadow: 0 0 8px #1a1a40, 0 0 12px #3e3e7c;
     }
     
     .subtitle {
