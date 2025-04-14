@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="id">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SciLab: Eksperimen Sains Online!</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SciLab: Eksperimen Sains Online!</title>
 
-    <base href="../../">
+  <link rel="icon" href="../../Images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../../Styles/generalstyle.css" />
+  <link rel="stylesheet" href="../../Styles/navbarstyle.css" />
+  <link rel="stylesheet" href="../../Styles/simoverstyle.css">
+</head>
 
-    <link rel="icon" href="Images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="Styles/generalstyle.css" />
-    <link rel="stylesheet" href="Styles/navbarstyle.css" />
-    <link rel="stylesheet" href="Styles/simoverstyle.css">
+<body>
 
-    
-  </head>
-  
-  <body>
-  
-    <!-- NAVBAR FOR ALL PAGES -->
-
+  <!-- NAVBAR FOR ALL PAGES -->
   <nav class="navbar">
-    <img src="Images/homelogo.png" alt="logo" class="logo" />
+    <img src="../../Images/homelogo.png" alt="logo" class="logo" />
 
     <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger">
-      &#9776;
-    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
 
     <!-- Nav Links -->
     <div class="navbar-links" id="navbarLinks">
-      <a href="index.html">Beranda</a>
-      <a href="Pages/simulsel.html">Simulasi</a>
-      <a href="Pages/materialsel.html">Materi</a>
-      <a href="Pages/aboutus.html">Tentang Kami</a>
+      <a href="../../index.html">Beranda</a>
+      <a href="../../Pages/simulsel.html">Simulasi</a>
+      <a href="../../Pages/materialsel.html">Materi</a>
+      <a href="../../Pages/aboutus.html">Tentang Kami</a>
     </div>
   </nav>
 
@@ -42,33 +35,38 @@
     <!-- Video and Sidebar -->
     <div class="main-sim-area">
       <div class="play-frame">
-        <img src="Images/gaseouses.png" alt="Simulasi Gas Ideal" class="play-image" />
+        <a href="../../Resources/Sims/IdealGas/index.html" class="play-link">
+          <img src="../../Images/gaseouses.png" alt="Simulasi Gas Ideal" class="play-image" />
+          <div class="play-button">▶ Mulai</div>
+        </a>
       </div>
-      <div class="sidebar-preview">
-        <div class="preview-item"></div>
-      </div>
-    </div>
 
-    <!-- Title -->
-    <div class="sim-title">
-      <span class="sim-icon">▶</span>
-      <h1 class="sim-text">Gas Ideal</h1>
-      <span class="sim-icon">◀</span>
+      <div class="sidebar-preview">
+        <div class="preview-row">
+          <div class="preview-item"></div>
+          <div class="preview-item"></div>
+        </div>
+        <div class="sim-title">
+          <span class="sim-icon">▶</span>
+          <h1 class="sim-text">Gas Ideal</h1>
+          <span class="sim-icon">◀</span>
+        </div>
+      </div>
     </div>
 
     <!-- Info Boxes -->
     <div class="info-boxes">
       <div class="box about">
         <h2>Tentang</h2>
-        <p>Gas ideal adalah... Eksperimen ini merupakan eksplorasi dari konsep tersebut.</p>
+        <p class="content">Gas ideal adalah... Eksperimen ini merupakan eksplorasi dari konsep tersebut.</p>
       </div>
       <div class="box goal">
         <h2>Tujuan</h2>
-        <p>Memahami konsep gas ideal dan pengaruh perubahan suhu terhadap tekanan dan volume.</p>
+        <p class="content">Memahami konsep gas ideal dan pengaruh perubahan suhu terhadap tekanan dan volume.</p>
       </div>
       <div class="box challenge">
         <h2>Tantangan</h2>
-        <ul>
+        <ul class="content">
           <li>Mencapai suhu tertentu...</li>
           <li>Mendapatkan tekanan tertentu...</li>
         </ul>
@@ -85,8 +83,6 @@
     });
   </script>
 
-  <!--END OF NAVBAR-->
-
-  </body>
+</body>
 
 </html>
