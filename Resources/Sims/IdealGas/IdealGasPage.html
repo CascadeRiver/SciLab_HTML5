@@ -5,9 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | Ideal Gas Experiment</title>
     <link rel="stylesheet" href="../../../Styles/simulatorstyle.css">
+    <link rel="stylesheet" href="../../../Styles/generalstyle.css">
   </head>
   <body>
-    <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+    <!-- Exit Button -->
+    <a style="color: white; text-decoration: none; font-family: 'VT323'; font-size: 3rem; margin: 10px;" href="../../../Pages/Simulations/idealgas.html">KELUAR</a>
+
+    <canvas id="unity-canvas" style="z-index: -1;"></canvas>
     <script src="Build/Builds.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {

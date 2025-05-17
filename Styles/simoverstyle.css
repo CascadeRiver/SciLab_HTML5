@@ -105,6 +105,12 @@
   display: inline;
   background-color: orange;
   border: 5px solid white;
+  
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .sim-icon {
